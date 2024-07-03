@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website | Codehal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact-me.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Maram Alashi</h2>
+        <nav class="navigation">
+            <a href ="index.html">About Me</a>
+            <a href ="projects.html">Projects</a>
+            <a href ="skills.html">Skills</a>
+            <a href ="future.html">Future</a>
+            <a href ="contact-me.htmls" class="active">Contact Me</a>
+        </nav>
+    </header>
+
+   <h2 class="contact-me">Contact Me</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form id="submit-to-google-sheet" method="POST" action="https://script.google.com/macros/s/AKfycbwSBHErEoHp5YSQpyc82pgn6YgA_iJquwJ6b6uRPKCYv-KUfy34vBhn7fVA1G1UzwTS/exec" >
+                    <input type="text" id= "name" name="Name" placeholder="Your Name" required>
+                    <input type="email" id= "email" name="Email" placeholder="Your Email" required>
+                    <input type="text" id= "phone" name="Phone" placeholder="Your Phone" required>
+                    <textarea id="message" name="Message" rows="4" placeholder="Your Message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    
+        <div class="cont">
+            <h2 class="learn-more">Behind The Website</h2>
+                <button class="collapsible">Where are my sources?</button>
+                    <div class="content">
+                        <p>All resources used to create this website are cited in this <a href="https://docs.google.com/document/d/1-ewXIS1Iq8YB1b8iBCJvVetqE4LrQw2-XizG12FHtBA/edit?usp=sharing" style="color: #1c79be">document.</a>
+                        </p>
+                    </div>
+                <button class="collapsible">What did I use to make the parallax?</button>
+                    <div class="content">
+                        <p>Along with the help of countless youtube videos and google searches, I utilized photoshop and javascript to create the parallax effect. After choosing my background image, 
+                            I used Photoshop to seperate it into individual layers which I then drew myself in order to create a cleaner effect.
+                        </p>
+                        <img class="layers" src="img/Screenshot 2024-07-03 at 3.53.19 AM.png">
+                    </div>
+        </div>
+
+</body>
+
+<script src="script.js"></script>
+</body>
+
+</html>

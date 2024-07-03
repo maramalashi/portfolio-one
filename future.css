@@ -1,0 +1,87 @@
+body, html {
+    height: 50%;
+    background-image: url('img/landscape.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+
+  .future {
+    font-size: 1.5em;
+    color: #DAFBFD;
+    height: 500px;
+    margin-bottom: 500px;
+  }
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5em;
+    margin-right: auto;
+    color: #0F5D93;
+}
+
+.navigation a {
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    color: #0F5D93;
+}
+
+.navigation a:hover, .navigation a.active {
+    background: #FAA085;
+    color: aliceblue;
+}
+
+.future-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.textbox {
+    width: 80%;
+    max-width: 930px;
+    border: 2px solid #0F5D93;
+    border-radius: 10px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.textbox-title {
+    font-size: 2.5em;
+    color: #0F5D93;
+    margin-bottom: 10px;
+}
+
+.textbox-content {
+    width: 100%;
+    border: 1px solid #0F5D93;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: 500;
+    resize: none;
+}
+.textbox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}

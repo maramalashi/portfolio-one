@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #DAFBFD;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5em;
+    margin-right: auto;
+    color: #0F5D93;
+}
+
+.navigation a {
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    color: #0F5D93;
+}
+
+.navigation a:hover, .navigation a.active {
+    background: #FAA085;
+    color: white;
+}
+
+.parallax {
+    background-color: #DAFBFD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 121vh;
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+}
+.parallax::after {
+    content: '';
+    position: absolute;
+    bottom: -82px;
+    left: 0;
+    width: 107%;
+    height: 112px;
+    background: linear-gradient(to bottom, #1C79BE, transparent);
+    z-index: 1000;
+}
+
+.sec::before {
+    content: '';
+    position: absolute;
+    bottom: 672px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1C79BE, transparent);
+    z-index: 1000;
+}
+
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: #0F5D93;
+    text-shadow: #333;
+}
+
+
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    padding-bottom: 50px;
+}
+
+.sec {
+    position: relative;
+    background-color: #DAFBFD;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.sec.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sec h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.sec p {
+    font-size: 1.5em;
+    color: #555;
+}
+
+.sec .content {
+    flex: 1;
+}
+
+.sec .image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.sec .image-container img {
+    width: 80%;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sec .image-container:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 50px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation a {
+        margin: 5px 0;
+    }
+
+    .parallax {
+        height: 50vh;
+    }
+
+    #text {
+        font-size: 2.5em;
+    }
+
+    .sec {
+        padding: 50px 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sec h2 {
+        font-size: 2em;
+    }
+
+    .sec p {
+        font-size: 1em;
+    }
+
+    .sec .image-container img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .logo {
+        font-size: 1.5em;
+    }
+
+    .navigation a {
+        padding: 4px 10px;
+    }
+
+    .parallax {
+        height: 40vh;
+    }
+
+    #text {
+        font-size: 2em;
+    }
+
+    .sec {
+        padding: 30px 10px;
+    }
+
+    .sec h2 {
+        font-size: 1.5em;
+    }
+
+    .sec p {
+        font-size: 0.9em;
+    }
+
+    .sec .image-container img {
+        width: 100%;
+    }
+}

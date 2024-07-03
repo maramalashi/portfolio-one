@@ -1,0 +1,153 @@
+body{
+    background-image: url(img/landscape.png);
+    background-size: contain;
+    background-color: #DAFBFD;
+}
+body{
+    background-image: url(img/landscape.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0px 434px 254px 0px;
+    
+    
+}
+.contact-me{
+    justify-content: center;
+    display: flex;
+    margin-top: 150px;
+    font-size: 40px;
+    color: #333;
+}
+form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+form input, form textarea {
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    margin: 10px 0;
+    padding: 15px;
+    outline: none;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #1C79BE;
+}
+
+form button {
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background: #1C79BE;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #555;
+}
+
+#submit-to-google-sheet{
+    width: 400%;
+}
+
+.learn-more{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    margin-top: -89px;
+    color: #333;
+}
+.collapsible {
+    background-color: #0f5d93;
+    color: white;
+    cursor: pointer;
+    padding: 28px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    margin: 5px;
+    font-weight: 500;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: gray;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: #DAFBFD;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 20px;
+  }
+.content p{
+    background-color: #DAFBFD;
+    border-radius: 5px;
+    color: #333;
+}
+  .cont{
+    padding: 40px;
+  }
+
+
+.layers {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-left: 28%;
+}
+
+/*body::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to bottom, rgba(218, 251, 253, 0), #DAFBFD 50%, #DAFBFD);
+    pointer-events: none;
+    padding-top: 20px;
+} */

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Maram Alashi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="skills.css">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">Maram Alashi</h2>
+        <nav class="navigation">
+            <a href="index.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="future.html">Future</a>
+            <a href="contact-me.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <section class="coding">
+        <div class="info">
+            <h2 class="coding-skills">Coding Languages</h2>
+            <div class="row">
+                <div class="column">
+                    <div class="image-container">
+                        <img src="img/html-logo.png" alt="HTML Logo">
+                        <div class="overlay">HTML</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image-container">
+                        <img src="img/css-logo.png" alt="CSS Logo">
+                        <div class="overlay">CSS</div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="image-container">
+                        <img src="img/java-logo.png" alt="JavaScript Logo">
+                        <div class="overlay">JavaScript</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h2 class="yearbook-design">Yearbook Design</h2>
+    <div class="buttons">
+        <a class="prev" onclick="prevSlide()">&#10094;</a>
+        <a class="next" onclick="nextSlide()">&#10095;</a>
+     </div>
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/Users/maramalashi/Documents/Screenshot 2024-07-02 at 6.58.36 PM.png" alt="Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="/Users/maramalashi/Documents/Screenshot 2024-07-02 at 6.59.03 PM.png" alt="Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/Users/maramalashi/Desktop/Screenshot 2024-07-02 at 7.00.04 PM.png" alt="Image 3">
+            </div>
+        </div>
+       
+        <div class="indicators">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+    <h2 class="resume-title">Learn More!</h2>
+<div class="resume">
+    <div class="row">
+        <div class="column">
+            <a href="https://docs.google.com/document/d/1qJ7fkZEWiReWWMNKvbVe0_ONQuSKLA8X30yBC_MKma8/edit?usp=sharing" class="image-container">
+                <img src="img/Untitled design (1).png" alt="resume">
+                <div class="overlay">Resume</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+     
+    </div>
+
+    <script src="skills.js"></script>
+</body>
+
+</html>
